@@ -1,0 +1,165 @@
+<!DOCTYPE Html>
+<html lang="ka-GE">
+<head>
+<meta charset="utf-8">
+<meta name="decsription" content="ჩემი პირველი ვებსაიტი">
+<meta name="keywords" content="html, css, javascript">
+<meta name="viewport" content=width-device-width, initial-scale=1.0>
+<title>მთავარი გვერდი</title>
+
+
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+
+
+   
+ 
+</head>
+
+<body>
+
+<div class="container">
+<header>
+<a href="index.html"><img src="images/logo.jpg" class></a>
+<div class="webtitle">Web Title</div>
+
+
+	<nav class="navbar navbar-default">
+	
+		<header>
+	<div class="container">
+	  <div class="container-fluid">
+
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="index.html">მთავარი</a></li>
+	      <li><a href="#">ჩვენს შესახებ</a></li>
+	      <li><a href="contact.html">კონტაქტი</a></li>
+	    </ul>
+
+<!-- end container --->
+	  </div>
+	   </div>
+	</nav>
+
+</header>
+
+<!-- Modal -->
+  <div class="modal fade" id="Modal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">გმადლობთ</h4>
+        </div>
+        <div class="modal-body">
+          	<div id="result">
+          		
+
+          	</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+<!-- <div class="container">
+	
+<section class="col-md-9">
+<article class="panel panel-default">
+	  <div class="panel-heading" style="background-color: white; margin: 0; ><h4 style="background-color: white"> <a href="#" >ეს არის სათაური</h4></a></div>
+		  <div class="panel-body">
+<div class="col-md-4 col-sm-4 no-padding">
+--->
+<div class="container">
+<h4>კონტაქტი</h4>
+
+<div class="col-md-7 col-sm-8">
+	<form action="javascript:void(0)">
+		<div class="form-group">
+			<label for="email">თქვენი იმეილი</label>
+			<input type="email" id="email" class="form-control" value="Giorgadze.ana@yahoo.com">
+		</div>
+
+<div class="form-group">
+			<label for="name">სახელი და გვარი</label>
+			<input type="text" id="name" class="form-control" value="ანა გიორგაძე">
+		</div>
+
+<div class="form-group">
+			<label for="text">ტექსტი</label>
+			<textarea id="text" class="form-control" rows="4"> </textarea>
+		</div>
+
+<div class="form-group text-right">
+			<input type="submit" value="გაგზავნა" class="btn btn-default">
+	</form>
+</div>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Modal">Open Modal</button>
+</div>
+
+<!-- Trigger the modal with a button -->
+
+
+<div class="col-md-5 col-sm-4">
+<ul class="list-group" style="margin-top: 25px;">
+    <li class="list-group-item"> <i class="fas fa-phone-volume"></i> ტელეფონი: &nbsp; &nbsp;&nbsp;
++995 xxx xxxxxx </li>
+    <li class="list-group-item"><i class="fas fa-envelope"> </i> E-mail:&nbsp; &nbsp;&nbsp;<a href="mailto:giorgadze.ana@yahoo.com">
+giorgadze.ana@yahoo.com </li></li></a> 
+    <li class="list-group-item"> <i class="fas fa-home"> </i> მისამართი: &nbsp; &nbsp;&nbsp; თბილისი,  
+ტიციან ტაბიძის 30</li>
+  </ul>
+
+
+	
+
+
+</div>
+
+</section>
+</div>
+
+<footer class="col-md-12">
+	<hr>
+	<div class="text-center"><sap>&copy Ana Giorgadze </sap></div>
+</footer>
+	</div>
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+
+<script type="text/javascript">
+function ImageResize(){
+	$(".news").attr("width","900px");
+}
+</script>
+
+
+<script type="text/javascript">
+	$('form').submit(function(){
+		var email, name, text;
+		email=$('#email').val();
+		name=$('#name').val();
+		text=$('#text').val();
+		var result='თქვენი იმეილია '+  email + ' <br> თქვენი სახელია '+ name + '<br>თქვენი ტექსტი' + text;
+		$('#result').html(result);
+		$('#Modal').modal();
+});
+	
+</script>
+
+</header>
+
+</body>
