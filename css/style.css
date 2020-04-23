@@ -1,0 +1,119 @@
+<style type="text/css">
+
+	/*textarea{
+		max-width: 100%;
+	}*/
+	--->
+	.menu{
+		background-color: gray;
+		min-height: 30px;
+	}
+	.menu ul li{
+list-style-type: none;
+display: inline-block;
+color:black;
+padding: 12px;
+	}
+	.menu ul li:hover{
+background-color: #ffffff;
+color:black;
+	cursor: pointer;
+	}
+	.menu ul li:first-child{
+margin-left: -40px;
+	}
+
+.menu ul li a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menu ul li:hover a{
+	color: black;
+
+}
+.webtitle{
+	position: absolute;
+	top: 20px;
+	font-size: 60px;
+	font-style: oblique;
+	text-align: top;
+	padding-left: 200px;
+}
+.logo{
+	position: absolute;
+	padding-top: 0px;
+	padding-left: 250px;
+	}
+.headline{
+	margin-left: 10px;
+}
+.news{
+	padding: 12px;
+	text-align: justify;
+}
+.contactHeader{
+	background-color: #f0f5f0;
+	padding: 12px;
+    width: 140px;
+    border-bottom-left-radius: 15px; 
+    border-top-right-radius: 15px;
+    text-align: center;
+
+}
+.contact-form{
+margin-left: 20px;
+}
+img{
+	max-width: 100%;
+	}
+
+.no-padding{
+	padding: 0;
+
+
+}
+.contact-form label{
+margin-top: 10px;
+display: block;
+font-weight: bold;
+
+}
+.input{
+width: 30%;
+padding: 5px;
+margin-top: 5px;
+
+}
+.button{
+display: block;
+background-color: gray;
+color: black;
+padding: 10px;
+}
+@media only screen and (max-width: 500px) {
+	.logo img{
+		width: 100%;
+	}
+
+}
+@media only screen and (max-width: 875px) {
+	body{
+		width: 100%;
+	}
+	.menu ul li{
+display: inline-block;
+color:black;
+margin-left: -40px;
+	}
+	.menu ul li:hover{
+background-color: orange;
+
+	}
+.contactHeader{
+	display: none;
+}
+.input{
+	width: 100%;
+
+}

@@ -1,0 +1,61 @@
+<style type="text/css">
+	body{
+		background-color: #f0f5f5;
+		width: 60%;
+		margin: auto;
+	}
+	.container{
+	padding-top: 100px;
+	background-color: #ffffff;
+	width: 100%;
+	min-height: 100vh;
+	}
+	
+	.menu{
+		background-color: gray;
+		min-height: 30px;
+	}
+	.menu ul li{
+list-style-type: none;
+display: inline-block;
+color:black;
+padding: 12px;
+	}
+	.menu ul li:hover{
+background-color: #ffffff;
+color:black;
+	cursor: pointer;
+	}
+	.menu ul li:first-child{
+margin-left: -40px;
+	}
+
+.menu ul li a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menu ul li:hover a{
+	color: black;
+
+}
+.webtitle{
+	padding-left: 200px;
+	padding-top: 0px;
+	font-size: 60px;
+	font-style: oblique;
+	text-align: top;
+	position: absolute;
+}
+.logo{
+	position: absolute;
+	padding-top: 0px;
+	padding-left: 15px;
+	}
+.headline{
+	margin-left: 10px;
+}
+.news{
+	padding: 12px;
+	text-align: justify;
+}
